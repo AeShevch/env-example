@@ -1,16 +1,16 @@
 import Head from 'next/head'
 require('dotenv').config()
 
-export default function Home(props) {
+export default function Home({foo}) {
     return (
         <div className="container">
             <Head>
-                <title>{props.foo}</title>
+                <title>{foo}</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
             <main>
-                {props.foo}
+                {foo}
             </main>
         </div>
     )
